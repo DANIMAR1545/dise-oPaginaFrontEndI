@@ -1,0 +1,579 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+/* Header*/
+
+header {
+    align-items: center;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 165px;
+}
+
+header div {
+    flex-wrap: wrap;
+}
+
+header h1 {
+    display: none;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-right: 28px;
+}
+
+header nav ul li {
+    margin-left: 28px;
+}
+
+header nav ul li a {
+    color: #242E52;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+header i.fas.fa-bars {
+    display: none;
+}
+
+.boton-general {
+    align-items: center;
+    background-color: #F3603B;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 4px 8px rgba(243, 96, 59, 0.5);
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    height: 44px;
+    justify-content: center;
+    left: 1140.54px;
+    padding: 10px;
+    top: 65px;
+    width: 134px;
+}
+
+header button.boton-general {
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+}
+
+/*Main*/
+
+main {
+    background-color: #FFFFFF;
+    flex-wrap: wrap;
+}
+
+    /*Primera Seccion*/
+
+main section:nth-child(1) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 165px;
+}
+
+main section article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 439px;
+}
+
+main section article h2 {
+    color: #232C50;
+    font-size: 58px;
+    font-weight: 700;
+    letter-spacing: -0.035em;
+    line-height: 66,47px;
+    padding-bottom: 15px;
+}
+
+main section article p {
+    font-size: 16,56px;
+    font-weight: 500;
+    line-height: 26,01px;
+    padding-bottom: 15px;
+    width: 350px;
+}
+
+main section img.graficos {
+    width: auto;
+}
+
+    /*Segunda Seccion*/
+
+main section.sobre-compania {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 120px 165px;
+}
+
+main section.sobre-compania article.diferenciacion {
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    max-width: 433px;
+}
+
+main section.sobre-compania article.diferenciacion h3 {
+    color: #232C50;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 41.26px;
+    margin-bottom: 36px;
+}
+
+main section.sobre-compania article.diferenciacion p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+main section.sobre-compania article.datos-importantes {
+    display: flex;
+    flex-direction: column;
+    width: 537px;
+}
+
+main section.sobre-compania article.datos-importantes h5{
+    color: #323851;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: -0.015em;
+    line-height: 23px;
+    padding-bottom: 18px;
+    padding-left: 20px;
+}
+
+article.datos-importantes {
+    counter-reset: numero;
+}
+
+main section.sobre-compania  article.datos-importantes h5::before {
+    background-color: #F3603B;
+    border-radius: 30px;
+    box-shadow: none;
+    color: #FFFFFF;
+    counter-increment: numero;
+    content: counter(numero, decimal-leading-zero);
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-right: 23px;
+    padding: 10px 25px;
+}
+
+main section.sobre-compania article.datos-importantes p {
+    color: #B3B2B7;
+    font-size: 16.2984px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    line-height: 26px;
+    margin-bottom: 43px;
+    padding-left: 115px;
+    width: 537px;
+}
+
+/*Tercera Seccion del Main - CARS*/
+
+main section.testimonios {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 180px;
+    width: 100%;
+}
+
+main section.testimonios div.titulo {
+    align-items: center;
+    padding-bottom: 75px;
+    width: 334,41px;
+}
+
+main section.testimonios h3 {
+    color: #242E53;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 61,41px;
+    letter-spacing: -0.01em;
+}
+
+main section.testimonios div.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+main section.testimonios div.contenedor article.cards {
+    align-items: center;
+    background: #f8f3f3;
+    display: flex;
+    flex-direction: column;
+    height: 219px;
+    margin-bottom: 50px;
+    position: relative;
+    padding: 38.5px 21px;
+    text-align: center;
+    width: 445px;
+}
+
+section div.contenedor article img {
+    bottom: calc(219px - (70px /2));
+    height: 70px;
+    left: calc( 50% - (70px /2));
+    position: absolute;
+    width: 70px;
+}
+
+section div.contenedor article.cards h4 {
+    color: #3F4868;
+    font-size: 16.0714px;
+    font-weight: bold;
+    letter-spacing: -0.01em;
+    line-height: 156.6%;
+    padding-top: 21px;
+}
+
+main section.testimonios div.contenedor article.cards p {
+    color: #B9B9C1;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 156.6%;
+    padding-top: 21px;
+}
+
+main section.testimonios div.carrusel {
+    display: none;
+}
+
+
+/*Cuarta Seccion del Main*/
+
+main section.simplificar {
+    align-items: center;
+    background: #F3613C;
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 165px;
+}
+
+main section.simplificar h3 {
+    color: #FFFFFF;
+    font-size: 39.9px;
+    font-weight: 700;
+    letter-spacing: -0.005em;
+    line-height: 47.84px;
+    width: 438px;
+}
+
+main section.simplificar button.boton-general {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    color: #F3603B;
+}
+
+/* Footer */
+
+footer {
+    background: #1E1E26;
+    color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 52.93px 165px;
+}
+
+footer div.logo-redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 153.69px;
+}
+
+
+footer div.logo-redes div.redes {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div.contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+}
+
+footer div.contacto div {
+    display: flex;
+}
+
+footer div.derechos {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+}
+
+footer div.derechos span {
+    color: #8C8C94;
+    font-size: 12.5px;
+}
+
+
+footer div.enlaces {
+    display: flex;
+}
+
+footer div.enlaces ul.otros {
+    padding-left: 219px;
+}
+
+footer div.enlaces ul {
+    list-style-type: none;
+}
+
+footer div.enlaces ul li {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 23px;
+    margin-top: 12px;
+}
+
+footer div.enlaces ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+footer div.contacto div form input {
+    border: none;
+    border-radius: 50px;
+    height: 44px;    
+    padding-left: 10px;
+    width: 201px;
+}
+
+footer div.contacto div button {
+    box-shadow: none;
+    height: 42px;
+    margin-left: 9px;
+    width: 63px;
+}
+
+
+@media (max-width: 375px) {
+
+    /* Header*/
+
+    header {
+        justify-content: space-around;
+        padding: 30px 0;
+        width: 100%;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header button.boton-general {
+        display: none;
+    }
+
+    header i.fas.fa-bars {
+        display: block;
+    }
+
+    /* Main*/
+    main {
+        max-width: 375px;
+        padding: 0;
+    }
+
+    /*Primera Seccion*/
+
+    main section {
+        flex-direction: column-reverse;
+    }
+
+    main section:nth-child(1) {
+        padding: 0;
+    }
+
+    main section article {
+        align-items: center;
+        padding: 0 30px;
+        text-align: center;
+        width: auto;
+    }
+
+    main section article h2{
+        font-size: 39px;
+    }
+
+    main section article p.primer-texto {
+        color: #B3B2B7;
+        font-size: 15px;
+        padding-bottom: 30px;
+        width: auto;
+    }
+
+    main section img.graficos {
+        max-width: 100%;
+    }
+
+    /*Segunda Seccion*/
+
+    main section.sobre-compania {
+        justify-content: center;
+        margin: 60px 0;
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    main section.sobre-compania article.diferenciacion h3 {
+        max-width: 300px;
+    }
+
+    main section.sobre-compania article.diferenciacion p {
+        color: #B3B2B7;
+    }
+
+    main section.sobre-compania article.datos-importantes {
+        max-width: 358px;
+        order: -1;
+        padding: 10px;
+        text-align: left;
+    }
+
+    main section.sobre-compania article.datos-importantes h5 {
+        background-color: #ffe1d9;
+        padding: 8px 0;
+        width: 100%;
+    }
+
+    main section.sobre-compania article.datos-importantes h5::before {
+        margin-right: 10px;
+    }
+
+    main section.sobre-compania article.datos-importantes p {
+        font-size: 14px;
+        max-width: 350px;
+        padding: 15px 5px;
+    }
+
+    /*Tercera Seccion - CARS*/
+
+    main section.testimonios div.contenedor article.cards {
+        max-width: 358px;
+    }
+
+    main section.testimonios div.contenedor article.cards:nth-child(1) {
+        display: none;
+    }
+
+    main section.testimonios div.contenedor article.cards:nth-child(3) {
+        display: none;
+    }
+
+    main section.testimonios div.titulo {
+        width: auto;
+    }
+
+    main section.testimonios h3 {
+        font-size: 35px;
+    }
+
+    main section.testimonios div.contenedor article.cards p {
+        font-size: 15px;
+    }
+
+    main section.testimonios div.carrusel {
+        color: #F3603B;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 50px;
+    } 
+
+    main section.testimonios div.carrusel i {
+        margin-left: 15px;
+        width: 5px;
+    }
+
+    main section.testimonios div.carrusel i:nth-child(1) {
+        margin-left: 0;
+    }
+
+        /*Cuarta Seccion*/
+
+    main section.simplificar {
+        flex-direction: column;
+        justify-content: center;
+        padding: 60px 35px;
+        text-align: center;
+    }
+
+    main section.simplificar h3 {
+        font-size: 35px;
+        padding-bottom: 30px;
+        width: auto;
+    }
+
+    main section.sobre-compania article.diferenciacion {
+        width: 357px;
+    }
+
+    /*Footer*/
+
+    footer {
+        align-items: center;
+        flex-direction: column-reverse;
+        padding: 35px 15px;
+    }
+    
+    footer div.enlaces {
+        padding-top: 35px;
+    }
+    
+    footer div.enlaces ul.otros {
+        padding-left: 80px;
+    }
+    
+    footer div.enlaces ul.navegacion {
+        padding-left: 0;
+    }
+
+    footer div.logo-redes {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 35px 0;
+    }
+
+    footer div.logo-redes div.redes {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer div.logo-redes div.redes img {
+        margin-left: 30px;
+        padding-bottom: 35px;
+        width: 30px;
+    }
+
+    footer div.derechos {
+        justify-content: center;
+        order: -1;
+    }
+}
